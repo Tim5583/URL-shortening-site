@@ -177,4 +177,73 @@ body {
     max-width: 430px;
   }
 }
+
+.card-section {
+  background-color: #eff1f7;
+}
+
+.card-section .sub {
+  text-align: center;
+  padding: 3rem .5rem 1rem;
+  max-width: 900px;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.card-section .sub h2 {
+  margin: 1rem auto 1.5rem;
+}
+
+.card-section .sub .card-section-discription {
+  color: #9e9aa7;
+}
+
+.card-container {
+  position: relative;
+}
+
+.card-container::after {
+  content: "";
+  background-color: #2acfcf;
+  width: 8px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 0;
+}
+
+.card {
+  width: 340px;
+  height: 250px;
+  background-color: #fff;
+  padding: 4rem 1rem 1.5rem 1rem;
+  position: relative;
+  margin: 4rem auto;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+.card .card-img {
+  background-color: #3b3054;
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
 /*# sourceMappingURL=style.css.map */

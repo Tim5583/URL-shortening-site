@@ -1,0 +1,58 @@
+.card-section {
+    background-color: #eff1f7;
+    .sub {
+        text-align: center;
+        padding: 3rem .5rem 1rem;
+        max-width: 900px;
+        overflow: hidden;
+        font-size: 18px;
+
+        h2 {
+            margin: 1rem auto 1.5rem;
+        }
+
+        .card-section-discription {
+            color: $Grayish-Violet;
+        }
+    }
+}
+
+.card-container {
+    position: relative;
+    &::after {
+        content: "";
+        background-color: $Cyan;
+        width: 8px;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 0;
+    }
+}
+
+.card {
+    width: 340px;
+    height: 250px;
+    background-color: #fff;
+    padding: 4rem 1rem 1.5rem 1rem;
+    position: relative;
+    margin: 4rem auto;
+    z-index: 2;
+    border-radius: 5px;
+
+    .card-img {
+        background-color: $Dark-Violet;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
