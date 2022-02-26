@@ -1,0 +1,81 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 3.5rem;
+    padding: 0 1rem;
+    position: relative;
+
+    .sign-up {
+        width: 150px;
+        border-radius: 25px;
+        padding: .2rem .5rem;
+        font-weight: 400;
+
+        &:hover {
+            background-color: $Cyan;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        margin-left: .5rem;
+
+        &:hover {
+            color: $Cyan;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .nav {
+        .nav-items {
+            display: block; // >> none when hamburger trigger
+            position: absolute;
+            background-color: rgb(255, 255, 255);
+            left: 10%;
+            right: 10%;
+            z-index: 10;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.1);
+    
+            a {
+                display: block;
+                margin: 1rem auto;
+            }
+        }
+    
+        .item-list1 {
+            top: 100px;
+        }
+    
+        .item-list2 {
+            top: 255px;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .nav {
+        .nav-img {
+            display: flex;
+            align-items: center;
+    
+            div {
+                margin-left: 1rem;
+            }
+        }
+
+        #hamburger-icon {
+            display: none;
+        }
+
+        .nav-items {
+            display: block;
+        }
+    }
+}

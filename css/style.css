@@ -34,6 +34,89 @@ body {
   }
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 3.5rem;
+  padding: 0 1rem;
+  position: relative;
+}
+
+.nav .sign-up {
+  width: 150px;
+  border-radius: 25px;
+  padding: .2rem .5rem;
+  font-weight: 400;
+}
+
+.nav .sign-up:hover {
+  background-color: #2acfcf;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav a {
+  color: black;
+  text-decoration: none;
+  margin-left: .5rem;
+}
+
+.nav a:hover {
+  color: #2acfcf;
+}
+
+@media (max-width: 800px) {
+  .nav .nav-items {
+    display: block;
+    position: absolute;
+    background-color: white;
+    left: 10%;
+    right: 10%;
+    z-index: 10;
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .nav .nav-items a {
+    display: block;
+    margin: 1rem auto;
+  }
+  .nav .item-list1 {
+    top: 100px;
+  }
+  .nav .item-list2 {
+    top: 255px;
+  }
+}
+
+@media (min-width: 800px) {
+  .nav .nav-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav .nav-img div {
+    margin-left: 1rem;
+  }
+  .nav #hamburger-icon {
+    display: none;
+  }
+  .nav .nav-items {
+    display: block;
+  }
+}
+
 .hero-section {
   margin: 3.5rem auto 2rem;
   text-align: center;
