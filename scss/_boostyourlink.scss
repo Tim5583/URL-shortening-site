@@ -5,8 +5,12 @@
     background-position: center center;
     background-repeat: no-repeat;
     text-align: center;
-    background-color: $Very-Dark-Violet;
+    background-color: $Dark-Violet;
     color: #fff;
+
+    h2 {
+        font-size: 1.1rem;
+    }
 
     .btn {
         margin-top: 1rem;
@@ -17,5 +21,9 @@
 @media (min-width: 400px) {
     .boost-your-link {
         background-image: url(../images/bg-boost-desktop.svg);
+
+        h2 {
+            font-size: 1.5rem;
+        }
     }
 }

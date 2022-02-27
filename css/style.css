@@ -362,8 +362,12 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
-  background-color: #232127;
+  background-color: #3b3054;
   color: #fff;
+}
+
+.boost-your-link h2 {
+  font-size: 1.1rem;
 }
 
 .boost-your-link .btn {
@@ -374,6 +378,93 @@ body {
 @media (min-width: 400px) {
   .boost-your-link {
     background-image: url(../images/bg-boost-desktop.svg);
+  }
+  .boost-your-link h2 {
+    font-size: 1.5rem;
+  }
+}
+
+.footer-main {
+  background-color: #232127;
+  color: #fff;
+  margin: auto -20px -20px;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+.footer a {
+  color: #9e9aa7;
+  text-decoration: none;
+  margin: .1rem;
+  font-size: .9em;
+  display: inline-block;
+}
+
+.footer a:hover {
+  color: #2acfcf;
+}
+
+.footer .footer-section {
+  margin: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer-section .footer-section-header {
+  margin-bottom: .5rem;
+  font-weight: 700;
+}
+
+.footer .footer-social-icons img {
+  margin: .5rem;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .footer-main {
+    padding-bottom: 1rem;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer img {
+    position: relative;
+    top: -60px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer .footer-social-icons {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer .footer-section {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 /*# sourceMappingURL=style.css.map */
