@@ -73,9 +73,69 @@ body {
   color: #2acfcf;
 }
 
+#hamburger-icon {
+  border: none;
+  background-color: transparent;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+}
+
+#hamburger-icon div.hamline {
+  background-color: #232127;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition: opacity 100ms ease-in 500ms;
+  transition: opacity 100ms ease-in 500ms;
+}
+
+#hamburger-icon::after, #hamburger-icon::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: #232127;
+  width: 100%;
+  height: 3px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: 500ms ease-in;
+  transition: 500ms ease-in;
+}
+
+#hamburger-icon::after {
+  top: 80%;
+}
+
+#hamburger-icon::before {
+  top: 20%;
+}
+
+#hamburger-icon.open div.hamline {
+  opacity: 0;
+}
+
+#hamburger-icon.open::after {
+  top: 50%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+#hamburger-icon.open::before {
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 @media (max-width: 800px) {
   .nav .nav-items {
-    display: block;
+    display: none;
     position: absolute;
     background-color: white;
     left: 10%;
