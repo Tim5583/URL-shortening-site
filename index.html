@@ -3,32 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <title>Shortly URL shortening API Challenge</title>
 </head>
 <body>
   <main>
-    
       <header>
+        <!-- navigation bar  -->
         <nav class="nav">
           <div class="nav-img">
             <img src="./images/logo.svg" alt="shorty logo svg">
+            <!-- navigaiton items  -->
             <div class="nav-items item-list1">
               <a href="">Features</a>
               <a href="">Pricing</a>
               <a href="">Resources</a>
             </div>
           </div>
+
+          <!-- navigation items  -->
           <div class="nav-items item-list2">
             <a href="">Login</a>
             <a href="" class="sign-up">Sign Up</a>
           </div>
+          <!-- hamburger icon  -->
           <button id="hamburger-icon" class=""><div class="hamline"></div></button>
         </nav>
       </header>
     
+      <!-- hero section  -->
       <section class="hero-section container">
         <img src="./images/illustration-working.svg" alt="illustration of working womon with computer" class="hero-img">
         <div class="hero-text">
@@ -40,21 +44,27 @@
           <button class="btn">Get Started</button>
         </div>
       </section>
-    
 
-    
+      <!-- card section  -->
       <section class="card-section">
+        <!-- get user's links  -->
         <form action="#" class="userlink">
           <input type="text" name="url" id="url" placeholder="Shorten a link here...">
           <input type="submit" value="Shorten It!" id="submit" class="btn">
         </form>
+
+        <!-- shortened link cards  -->
         <div id="generated-links"></div>
+
+        <!-- advanced statistics part -->
         <div class="sub">
           <h2>Advanced Statistics</h2>
           <p class="card-section-discription">
             Track how your links are performing across the web with our
             advanced statistics dashboard.
           </p>
+
+          <!-- cards contianer  -->
           <div class="card-container">
             <div class="card" id="card-1">
               <div class="card-img"><img src="./images/icon-brand-recognition.svg" alt=""></div>
@@ -84,12 +94,14 @@
         </div>
       </section>
     
+      <!-- boost your link section  -->
       <section class="boost-your-link">
         <h2>Boost your links today</h2>
         <button class="btn">Get Started</button>
       </section>
   </main>
 
+  <!-- footer section  -->
   <footer class="footer-main">
     <div class="footer">
       <img src="./images/footer-logo.svg" alt="shorty logo">
@@ -120,6 +132,7 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script> // js for styling
+  <script src="./js/api.js"></script> // js for api usage
 </body>
 </html>

@@ -302,6 +302,53 @@ body {
   width: 100%;
 }
 
+.card-section #generated-links .linkcards {
+  width: 90%;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: .5rem 1rem;
+  overflow: hidden;
+}
+
+.card-section #generated-links .linkcards hr {
+  height: 2px;
+  width: 200%;
+  opacity: .3;
+}
+
+.card-section #generated-links .linkcards p {
+  padding: 1rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.card-section #generated-links .linkcards .shortlink {
+  color: #2acfcf;
+}
+
+.card-section #generated-links .linkcards .btn {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card-section #generated-links .linkcards .btn.copied {
+  background-color: #3b3054;
+}
+
 .card-container {
   position: relative;
 }
@@ -379,6 +426,33 @@ body {
   }
   .card-section .userlink #submit {
     width: 25%;
+  }
+  .card-section #generated-links .linkcards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-section #generated-links .linkcards hr {
+    display: none;
+  }
+  .card-section #generated-links .linkcards p {
+    padding: 0;
+  }
+  .card-section #generated-links .linkcards .btn {
+    width: 35%;
+  }
+  .card-section #generated-links .linkcards .link {
+    width: 100%;
+  }
+  .card-section #generated-links .linkcards .shortlink {
+    justify-self: flex-end;
+    text-align: right;
+    padding-right: 1rem;
+    width: 60%;
   }
   .card-container {
     width: 100%;
