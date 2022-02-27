@@ -15,6 +15,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 .btn {
@@ -180,22 +181,65 @@ body {
 
 .card-section {
   background-color: #eff1f7;
+  margin: 6rem -18px 0;
+  padding: 1rem 1rem 3rem;
 }
 
 .card-section .sub {
   text-align: center;
-  padding: 3rem .5rem 1rem;
-  max-width: 900px;
+  padding: 1rem .5rem 1rem;
+  max-width: 960px;
+  margin: auto;
   overflow: hidden;
   font-size: 18px;
 }
 
 .card-section .sub h2 {
-  margin: 1rem auto 1.5rem;
+  margin: 1rem auto;
 }
 
 .card-section .sub .card-section-discription {
   color: #9e9aa7;
+  max-width: 400px;
+  margin: auto;
+}
+
+.card-section .userlink {
+  background-color: #232127;
+  background-image: url(../images/bg-shorten-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 90%;
+  max-width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  padding: 1.8rem 2rem;
+  border-radius: 8px;
+  position: relative;
+  top: -94px;
+}
+
+.card-section .userlink #url {
+  width: 100%;
+  margin-bottom: .5rem;
+  padding: .5rem 2rem;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-section .userlink #submit {
+  width: 100%;
 }
 
 .card-container {
@@ -216,8 +260,8 @@ body {
 }
 
 .card {
-  width: 340px;
-  height: 250px;
+  width: 300px;
+  height: 280px;
   background-color: #fff;
   padding: 4rem 1rem 1.5rem 1rem;
   position: relative;
@@ -245,5 +289,67 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.card p {
+  color: #9e9aa7;
+  font-size: .9em;
+  margin-top: .5rem;
+}
+
+.card h3 {
+  color: #232127;
+}
+
+@media (min-width: 1000px) {
+  .card-section .userlink {
+    background-image: url(../images/bg-shorten-desktop.svg);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 2.5rem 2rem;
+    top: -80px;
+  }
+  .card-section .userlink #url {
+    width: 70%;
+    margin-bottom: 0;
+  }
+  .card-section .userlink #submit {
+    width: 25%;
+  }
+  .card-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card-container::after {
+    width: 90%;
+    height: 8px;
+    top: 50%;
+    left: 30px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .card {
+    text-align: left;
+  }
+  .card .card-img {
+    left: 25%;
+  }
+  #card-2 {
+    position: relative;
+    top: 50px;
+  }
+  #card-3 {
+    position: relative;
+    top: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
