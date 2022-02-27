@@ -1,0 +1,21 @@
+.boost-your-link {
+    padding: 3rem;
+    margin: 0 -18px;
+    background-image: url(../images/bg-boost-mobile.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: $Very-Dark-Violet;
+    color: #fff;
+
+    .btn {
+        margin-top: 1rem;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 400px) {
+    .boost-your-link {
+        background-image: url(../images/bg-boost-desktop.svg);
+    }
+}

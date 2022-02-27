@@ -138,6 +138,7 @@
     }
 
     .card {
+        position: relative;
 
         text-align: left;
         .card-img {
@@ -145,13 +146,15 @@
         }
     }
 
+    #card-1 {
+        top: -10px;
+    }
+
     #card-2 {
-        position: relative;
-        top: 50px;
+        top: 40px;
     }
 
     #card-3 {
-        position: relative;
-        top: 100px;
+        top: 80px;
     }
 }

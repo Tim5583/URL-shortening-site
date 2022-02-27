@@ -338,18 +338,42 @@ body {
             transform: translateY(-50%);
   }
   .card {
+    position: relative;
     text-align: left;
   }
   .card .card-img {
     left: 25%;
   }
+  #card-1 {
+    top: -10px;
+  }
   #card-2 {
-    position: relative;
-    top: 50px;
+    top: 40px;
   }
   #card-3 {
-    position: relative;
-    top: 100px;
+    top: 80px;
+  }
+}
+
+.boost-your-link {
+  padding: 3rem;
+  margin: 0 -18px;
+  background-image: url(../images/bg-boost-mobile.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #232127;
+  color: #fff;
+}
+
+.boost-your-link .btn {
+  margin-top: 1rem;
+  border-radius: 25px;
+}
+
+@media (min-width: 400px) {
+  .boost-your-link {
+    background-image: url(../images/bg-boost-desktop.svg);
   }
 }
 /*# sourceMappingURL=style.css.map */
