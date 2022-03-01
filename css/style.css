@@ -82,7 +82,7 @@ body {
   cursor: pointer;
 }
 
-#hamburger-icon div.hamline {
+#hamburger-icon span.hamline {
   background-color: #232127;
   width: 100%;
   height: 3px;
@@ -117,7 +117,7 @@ body {
   top: 20%;
 }
 
-#hamburger-icon.open div.hamline {
+#hamburger-icon.open span.hamline {
   opacity: 0;
   -webkit-transition-delay: 200ms;
           transition-delay: 200ms;
