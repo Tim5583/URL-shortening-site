@@ -1,6 +1,4 @@
-# Frontend Mentor - Profile card component solution
-
-This is a solution to the [Profile card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+# Shortly URL shortening API
 
 ## Table of contents
 
@@ -17,6 +15,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ![the screenshot](./Screenshot.png)
 
+- [Live-URL](https://shorten-api.netlify.app/)
+
 ## My process
 
 ### Built with
@@ -24,10 +24,11 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- grid
+- JavaScript
+- API
 
 ### Useful resources
-
+- [API-Shortcode](https://shrtco.de/docs/) - API that uses in this project
 - [w3schools](https://www.w3schools.com/) - tutorial for html and css
 - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML) - Documentation for html
 
