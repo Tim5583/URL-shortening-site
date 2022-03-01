@@ -92,8 +92,8 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   opacity: 1;
-  -webkit-transition: opacity 100ms ease-in 500ms;
-  transition: opacity 100ms ease-in 500ms;
+  -webkit-transition: opacity 100ms ease-out 300ms;
+  transition: opacity 100ms ease-out 300ms;
 }
 
 #hamburger-icon::after, #hamburger-icon::before {
@@ -119,6 +119,8 @@ body {
 
 #hamburger-icon.open div.hamline {
   opacity: 0;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
 }
 
 #hamburger-icon.open::after {
@@ -159,6 +161,9 @@ body {
 }
 
 @media (min-width: 800px) {
+  .nav .nav-items {
+    display: block !important;
+  }
   .nav .nav-img {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -172,9 +177,6 @@ body {
   }
   .nav #hamburger-icon {
     display: none;
-  }
-  .nav .nav-items {
-    display: block;
   }
 }
 
@@ -495,6 +497,7 @@ body {
   background-image: url(../images/bg-boost-mobile.svg);
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   background-color: #3b3054;
   color: #fff;

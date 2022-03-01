@@ -1,11 +1,6 @@
 const hamburgerIcon = document.getElementById("hamburger-icon");
 const navItems = document.querySelectorAll(".nav-items");
 
-if (screen.width > 800) {
-    navItems.forEach(item => {
-        item.style.display = "block";
-    });
-}
 
 // show and hide navitems when hamburger icon tirggered
 hamburgerIcon.addEventListener("click", () => {

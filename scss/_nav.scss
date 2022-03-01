@@ -49,7 +49,7 @@
         left: 0;
         transform: translateY(-50%);
         opacity: 1;
-        transition: opacity 100ms ease-in 500ms;
+        transition: opacity 100ms ease-out 300ms;
     }
 
     &::after,
@@ -75,6 +75,7 @@
     &.open {
         div.hamline {
             opacity: 0;
+            transition-delay: 200ms;
         }
 
         &::after {
@@ -120,6 +121,9 @@
 
 @media (min-width: 800px) {
     .nav {
+        .nav-items {
+            display: block !important;
+        }
         .nav-img {
             display: flex;
             align-items: center;
@@ -131,10 +135,6 @@
 
         #hamburger-icon {
             display: none;
-        }
-
-        .nav-items {
-            display: block;
         }
     }
 }
