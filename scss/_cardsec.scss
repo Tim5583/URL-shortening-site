@@ -45,14 +45,25 @@
             font-family: inherit;
             font-weight: 700;
             font-size: 1rem;
+            border-radius: 5px;
         }
 
         #submit {
             width: 100%;
+            transition: 250ms ease-in;
+            border-radius: 5px;
+            &:hover {
+              opacity: .9;
+            }
         }
     }
 
     #generated-links {
+        .loading {
+          text-align: center;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
         .linkcards {
             width: 90%;
             max-width: 900px;
@@ -142,7 +153,7 @@
 
     h3 {
         color: $Very-Dark-Violet;
-    }   
+    }
 }
 
 @media (min-width: 1000px) {
@@ -153,7 +164,7 @@
             justify-content: space-around;
             padding: 2.5rem 2rem;
             top: -80px;
-    
+
             #url {
                 width: 70%;
                 margin-bottom: 0;
@@ -168,7 +179,7 @@
             .linkcards {
                 flex-direction: row;
                 align-items: center;
-    
+
                 hr {
                     display: none;
                 }

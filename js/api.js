@@ -2,7 +2,7 @@ const userLinkForm = document.getElementById("user-link-form");
 const generatedLinkContainer = document.getElementById("generated-links");
 const userInput = document.getElementById("url");
 
-// get localStorage data 
+// get localStorage data
 const localData = localStorage.getItem("linksCard");
 let savedCards = localData ? JSON.parse(localData) : [];
 
@@ -20,7 +20,7 @@ function copyToClipboard(shortURL, btnEl) {
     }, 2000)
 }
 
-// check if shorten link cards exist; if exist then display them 
+// check if shorten link cards exist; if exist then display them
 if (savedCards) {
     savedCards.forEach(card => {
         generatedLinkContainer.innerHTML += card;
@@ -39,21 +39,31 @@ userLinkForm.addEventListener("submit", (e) => {
 
     e.preventDefault();
     let userLink = userInput.value;
-    
-    fetch(`https://api.shrtco.de/v2/shorten?url=${userLink}`)
+
+    // create loading message
+    const loading = document.createElement("p");
+    loading.innerText = "Loading";
+    loading.classList.add("loading");
+    // add loading message to the dom
+    generatedLinkContainer.appendChild(loading);
+
+    fetch(`https://akpi.shrtco.de/v2/shorten?url=${userLink}`)
     .then(res => res.json())
     .then(data => {
 
-        // catch error  
+        // catch error
         if (!data.ok) {
             alert("Please, Enter a Valid URL");
             userInput.value = null;
         }
 
-        // shorten link 
+         // remove loading message
+        generatedLinkContainer.removeChild(loading);
+
+        // shorten link
         let shortenURL = data.result.full_short_link2;
 
-        // create card div 
+        // create card div
         const div = document.createElement("div");
         div.classList.add("linkcards");
         div.innerHTML = `
@@ -68,17 +78,20 @@ userLinkForm.addEventListener("submit", (e) => {
         copyBtn.classList.add("copyBtn");
         copyBtn.innerText = "Copy";
 
-        // copy sorten link to clipboard 
+        // copy sorten link to clipboard
         copyBtn.addEventListener("click", () => {
             copyToClipboard(shortenURL, copyBtn);
         });
 
-        // append button to div and card in to generated link container 
+        // append button to div and card in to generated link container
         div.append(copyBtn);
         generatedLinkContainer.append(div);
         savedCards.push(div.outerHTML);
-        // add to link shorten card to localStorage 
+        // add to link shorten card to localStorage
         localStorage.setItem("linksCard", JSON.stringify(savedCards));
         userInput.value = null;
-    });
+    })
+    .catch(err => {
+      alert("worng")
+    })
 });

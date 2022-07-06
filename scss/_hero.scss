@@ -1,4 +1,4 @@
-// for hero section styles 
+// for hero section styles
 
 .hero-section {
     margin: 3.5rem auto 2rem;
@@ -33,6 +33,11 @@
         .btn {
             border-radius: 25px;
             margin: 1rem auto 2rem;
+            transition: 250ms ease-in;
+
+            &:hover {
+              opacity: .8;
+            }
         }
     }
 }
