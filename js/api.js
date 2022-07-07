@@ -92,6 +92,8 @@ userLinkForm.addEventListener("submit", (e) => {
         userInput.value = null;
     })
     .catch(err => {
-      alert("worng")
+        alert("something went Wrong Please try ");
+        // remove loading message
+        generatedLinkContainer.removeChild(loading);
     })
 });
