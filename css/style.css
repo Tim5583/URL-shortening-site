@@ -342,6 +342,7 @@ body {
   color: hsl(257deg, 7%, 63%);
   font-size: 0.9em;
   margin-top: 0.5rem;
+  line-height: 27px;
 }
 .card h3 {
   color: hsl(260deg, 8%, 14%);
@@ -461,7 +462,7 @@ body {
 .footer a {
   color: hsl(257deg, 7%, 63%);
   text-decoration: none;
-  margin: 0.1rem;
+  margin: 0.4rem 0;
   font-size: 0.9em;
   display: inline-block;
 }

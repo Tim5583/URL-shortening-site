@@ -47,7 +47,7 @@ userLinkForm.addEventListener("submit", (e) => {
     // add loading message to the dom
     generatedLinkContainer.appendChild(loading);
 
-    fetch(`https://akpi.shrtco.de/v2/shorten?url=${userLink}`)
+    fetch(`https://api.shrtco.de/v2/shorten?url=${userLink}`)
     .then(res => res.json())
     .then(data => {
 
